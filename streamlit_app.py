@@ -15,7 +15,7 @@ def main():
     # Submit button
     if st.button("Submit"):
         # Send the prompt to the OpenAI API
-        response = openai.Completion.create(engine="gpt-4", prompt=user_input, max_tokens=500)
+        response = openai.ChatCompletion.create(engine="gpt-4", prompt=user_input, max_tokens=500)
         st.write(response.choices[0].text.strip())
 
 if __name__ == "__main__":
