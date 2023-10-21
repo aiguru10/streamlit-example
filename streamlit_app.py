@@ -22,7 +22,7 @@ def main():
             messages = message)
         # Send the prompt to the OpenAI API
         #response = openai.ChatCompletion.create(engine="gpt-4", prompt=user_input, max_tokens=500)
-        st.write(response.choices[0].text.strip())
+        st.write(response)
 
 if __name__ == "__main__":
     main()
