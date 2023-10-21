@@ -16,7 +16,7 @@ def main():
     if st.button("Submit"):
         message=[{"role": "user", "content": user_input}]
         response = openai.ChatCompletion.create(
-            model="gpt-3.5-turbo",
+            model="gpt-4",
             max_tokens=750,
             temperature=1.2,
             messages = message)
