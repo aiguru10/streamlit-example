@@ -14,7 +14,7 @@ def main():
 
     # Submit button
     if st.button("Submit"):
-        message=[{"role": "user", "content": "As an intelligent AI model, if you could be any fictional character, who would you choose and why?"}]
+        message=[{"role": "user", "content": user_input}]
         response = openai.ChatCompletion.create(
             model="gpt-4",
             max_tokens=100,
