@@ -17,7 +17,7 @@ def main():
         message=[{"role": "user", "content": user_input}]
         response = openai.ChatCompletion.create(
             model="gpt-4",
-            max_tokens=100,
+            max_tokens=750,
             temperature=1.2,
             messages = message)
         # Send the prompt to the OpenAI API
